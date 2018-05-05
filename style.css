@@ -1,20 +1,26 @@
+@media (max-width: 1600px) {
+  /* For a screen < 960px, this CSS will be read */
+  .wraper {
+    width: 400px;
+  }
+}
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  /*.container {
-    width: 750px;
-  }*/
+  .wraper {
+    width: 400px;
+  }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  /*.container {
-    width: 500px;
-  }*/
+  .wraper {
+    width: 400px;
+  }
 }
-@media (max-width: 540px) {
+@media (max-width: 450px) {
   /* For a screen < 540px, this CSS will be read */
-  /*.container {
+  .wraper {
     width: 300px;
-  }*/
+  }
 }
 
 body {
@@ -24,32 +30,33 @@ body {
   justify-content: center;
   background-color: #fff;
 }
+.wraper {
+  margin: 0 auto;
+}
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 400px;
-  height: 400px;
   background-color: #eee;
   padding: 10px;
-  margin: 0 auto;
   margin-bottom: 20px;
   border: 10px solid #aaa;
   border-radius: 5px;
+  line-height: 1.5;
 }
 .details-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 400px;
   background-color: #eee;
   padding: 10px;
   margin: 0 auto;
   margin-bottom: 20px;
   border: 10px solid #aaa;
   border-radius: 5px;
+  line-height: 1.5;
 }
 header {
   display: flex;
@@ -123,7 +130,6 @@ li {
 }
 .text-center {
   text-align: center;
-  width: 50px;
 }
 .text-center:hover {
   color: #aaa;
